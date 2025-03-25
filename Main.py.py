@@ -14,9 +14,8 @@ from threading import Thread
 # To allow FastAPI to run inside Jupyter
 nest_asyncio.apply()
 
-# Load the model (from your saved local path)
-model_path = r"C:\Dataset\ProjectSearchModel"
-model = SentenceTransformer(model_path)
+# Load a pre-trained model from Hugging Face
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 # Initialize FastAPI app
 app = FastAPI()
