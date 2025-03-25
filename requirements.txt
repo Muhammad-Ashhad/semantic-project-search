@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+transformers
+mysql-connector-python
+nest_asyncio
+sentence-transformers
+pydantic
